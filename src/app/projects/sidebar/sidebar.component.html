@@ -1,0 +1,38 @@
+ <div class="sidebar">
+
+    <!--
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+    -->
+
+    	<div class="sidebar-wrapper">
+            <div class="logo" style="padding-bottom:20px;">
+                <a class="simple-text" [routerLink]="['/']" style="padding:0px;padding-left:15px">
+                    O.A.SIT<br>
+                    <p _ngcontent-c1="" style="font-size: 12px;margin:0px;">SUANPHUENG</p>
+                    <p _ngcontent-c1="" style="font-size: 12px;margin:0px;">   &nbsp;  (Admin)</p>
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                    <a [routerLink]="['/admin']">
+                        <i class="pe-7s-graph"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li routerLinkActive="active">
+                    <a [routerLink]="['/admin/user']">
+                        <i class="pe-7s-user"></i>
+                        <p>User Profile</p>
+                    </a>
+                </li>
+                <li routerLinkActive="active">
+                  <a [routerLink]="['/admin/product']">
+                      <i class="pe-7s-user"></i>
+                      <p>Products</p>
+                  </a>
+              </li>
+            </ul>
+    	</div>
+    </div>

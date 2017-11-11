@@ -12,6 +12,11 @@ import { PetropowerComponent } from './petropower/petropower.component';
 import { PetropowerProjectsComponent } from './petropower-projects/petropower-projects.component';
 import { AiaaComponent } from './aiaa/aiaa.component';
 import { FooterComponent } from './footer/footer.component';
+import { MoreProjectsComponent } from './more-projects/more-projects.component';
+import { RouterModule, PreloadAllModules } from '@angular/router';
+import { routeConfig } from './app.routing';
+import { WrapperComponent } from './wrapper/wrapper.component';
+
 
 @NgModule({
   declarations: [
@@ -25,10 +30,13 @@ import { FooterComponent } from './footer/footer.component';
     PetropowerComponent,
     PetropowerProjectsComponent,
     AiaaComponent,
-    FooterComponent
+    FooterComponent,
+    MoreProjectsComponent,
+    WrapperComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routeConfig, {preloadingStrategy: PreloadAllModules}),
   ],
   providers: [],
   bootstrap: [AppComponent]
