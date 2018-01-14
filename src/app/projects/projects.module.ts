@@ -6,9 +6,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
 import { ProductsComponent } from './products/products.component';
-import { AdminRoutingModule } from './projects-routing.module';
 import { ProjectsComponent } from './projects.component';
 import { DeepLearningComponent } from './deep-learning/deep-learning.component';
+import { EsgnComponent } from './esgn/esgn.component';
+import { ProjectsRoutingModule } from './projects-routing.module';
+import { IonicComponent } from './ionic/ionic.component';
 
 @NgModule({
 
@@ -17,14 +19,16 @@ import { DeepLearningComponent } from './deep-learning/deep-learning.component';
     SidebarComponent,
     NavbarComponent,
     ProductsComponent,
-    DeepLearningComponent
+    DeepLearningComponent,
+    EsgnComponent,
+    IonicComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
-    AdminRoutingModule
+    ProjectsRoutingModule
   ]
 
 })
