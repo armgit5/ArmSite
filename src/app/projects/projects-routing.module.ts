@@ -6,6 +6,7 @@ import { ProductsComponent } from './products/products.component';
 import { DeepLearningComponent } from './deep-learning/deep-learning.component';
 import { EsgnComponent } from './esgn/esgn.component';
 import { IonicComponent } from './ionic/ionic.component';
+import { PcbComponent } from './pcb/pcb.component';
 
 const adminRoutes: Routes = [
   { path: '', component: ProjectsComponent, children: [
@@ -20,6 +21,10 @@ const adminRoutes: Routes = [
     {
       path: 'ionic',
       component: IonicComponent
+    },
+    {
+      path: 'pcb',
+      component: PcbComponent
     }
   ]}
 ];

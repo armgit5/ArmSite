@@ -11,6 +11,7 @@ import { DeepLearningComponent } from './deep-learning/deep-learning.component';
 import { EsgnComponent } from './esgn/esgn.component';
 import { ProjectsRoutingModule } from './projects-routing.module';
 import { IonicComponent } from './ionic/ionic.component';
+import { PcbComponent } from './pcb/pcb.component';
 
 @NgModule({
 
@@ -21,7 +22,8 @@ import { IonicComponent } from './ionic/ionic.component';
     ProductsComponent,
     DeepLearningComponent,
     EsgnComponent,
-    IonicComponent
+    IonicComponent,
+    PcbComponent
   ],
   imports: [
     CommonModule,
