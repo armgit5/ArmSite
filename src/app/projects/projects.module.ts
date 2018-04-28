@@ -14,6 +14,7 @@ import { IonicComponent } from './ionic/ionic.component';
 import { PcbComponent } from './pcb/pcb.component';
 import { GoogleAppComponent } from './google-app/google-app.component';
 import { WaterPumpComponent } from './waterpump-iot/waterpump-iot.component';
+import { SidebarService } from './sidebar/sidebar.service';
 
 @NgModule({
 
@@ -35,8 +36,10 @@ import { WaterPumpComponent } from './waterpump-iot/waterpump-iot.component';
     ReactiveFormsModule,
     RouterModule,
     ProjectsRoutingModule
+  ],
+  providers: [
+    SidebarService
   ]
-
 })
 
 export class ProjectsModule {

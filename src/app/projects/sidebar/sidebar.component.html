@@ -1,4 +1,4 @@
-<div class="sidebar" data-color="azure" data-image="../../../assets/img/arm/sidebar-4.jpg">
+<div id="side-navbar" [ngStyle]="{'right': width}" class="sidebar" data-color="azure" data-image="../../../assets/img/arm/sidebar-4.jpg">
 
   <!--
         Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
@@ -15,18 +15,21 @@
       </a>
     </div>
 
-    <ul class="nav">
+    <ul class="nav responsive-nav">
 
       <!-- Deep Learning project -->
       <li routerLinkActive="active">
-        <a [routerLink]="['/projects/deep-learning']">
+        <a [routerLink]="['/projects/deep-learning']"
+        (click)="linkSelected()">
           <i class="pe-7s-user"></i>
           <p>Deep Learning</p>
         </a>
       </li>
 
       <!-- ESGN project -->
-      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+      <li routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact:true}"
+      (click)="linkSelected()">
         <a [routerLink]="['/projects/esgn']">
           <i class="pe-7s-graph"></i>
           <p>ESGN</p>
@@ -35,7 +38,8 @@
 
       <!-- Ionic project -->
       <li routerLinkActive="active">
-        <a [routerLink]="['/projects/ionic']">
+        <a [routerLink]="['/projects/ionic']"
+        (click)="linkSelected()">
           <i class="pe-7s-user"></i>
           <p>Ionic3</p>
         </a>
@@ -43,7 +47,8 @@
 
       <!-- Google app project -->
       <li routerLinkActive="active">
-        <a [routerLink]="['/projects/google-app']">
+        <a [routerLink]="['/projects/google-app']"
+        (click)="linkSelected()">
           <i class="pe-7s-user"></i>
           <p>Google App</p>
         </a>
@@ -51,7 +56,8 @@
 
       <!-- Water Pump Controller project -->
       <li routerLinkActive="active">
-        <a [routerLink]="['/projects/waterpump-iot']">
+        <a [routerLink]="['/projects/waterpump-iot']"
+        (click)="linkSelected()">
           <i class="pe-7s-user"></i>
           <p>Water Pump IoT </p>
         </a>
@@ -59,12 +65,15 @@
 
       <!-- PCB project -->
       <li routerLinkActive="active">
-        <a [routerLink]="['/projects/pcb']">
+        <a [routerLink]="['/projects/pcb']"
+        (click)="linkSelected()">
           <i class="pe-7s-user"></i>
           <p>PCB Design</p>
         </a>
       </li>
 
     </ul>
+
+
   </div>
 </div>
