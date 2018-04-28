@@ -3,6 +3,7 @@ import {Location, LocationStrategy, PathLocationStrategy} from '@angular/common'
 
 @Component({
     moduleId: module.id,
+    // tslint:disable-next-line:component-selector
     selector: 'navbar-cmp',
     templateUrl: 'navbar.component.html',
     styleUrls: ['../../projects.component.css',

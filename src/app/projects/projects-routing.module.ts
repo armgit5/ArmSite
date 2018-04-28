@@ -7,6 +7,7 @@ import { DeepLearningComponent } from './deep-learning/deep-learning.component';
 import { EsgnComponent } from './esgn/esgn.component';
 import { IonicComponent } from './ionic/ionic.component';
 import { PcbComponent } from './pcb/pcb.component';
+import { GoogleAppComponent } from './google-app/google-app.component';
 
 const adminRoutes: Routes = [
   { path: '', component: ProjectsComponent, children: [
@@ -25,6 +26,10 @@ const adminRoutes: Routes = [
     {
       path: 'pcb',
       component: PcbComponent
+    },
+    {
+      path: 'google-app',
+      component: GoogleAppComponent
     }
   ]}
 ];

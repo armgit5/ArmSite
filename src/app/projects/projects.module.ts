@@ -12,6 +12,7 @@ import { EsgnComponent } from './esgn/esgn.component';
 import { ProjectsRoutingModule } from './projects-routing.module';
 import { IonicComponent } from './ionic/ionic.component';
 import { PcbComponent } from './pcb/pcb.component';
+import { GoogleAppComponent } from './google-app/google-app.component';
 
 @NgModule({
 
@@ -23,7 +24,8 @@ import { PcbComponent } from './pcb/pcb.component';
     DeepLearningComponent,
     EsgnComponent,
     IonicComponent,
-    PcbComponent
+    PcbComponent,
+    GoogleAppComponent
   ],
   imports: [
     CommonModule,
