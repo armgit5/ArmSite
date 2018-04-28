@@ -8,6 +8,7 @@ import { EsgnComponent } from './esgn/esgn.component';
 import { IonicComponent } from './ionic/ionic.component';
 import { PcbComponent } from './pcb/pcb.component';
 import { GoogleAppComponent } from './google-app/google-app.component';
+import { WaterPumpComponent } from './waterpump-iot/waterpump-iot.component';
 
 const adminRoutes: Routes = [
   { path: '', component: ProjectsComponent, children: [
@@ -30,6 +31,10 @@ const adminRoutes: Routes = [
     {
       path: 'google-app',
       component: GoogleAppComponent
+    },
+    {
+      path: 'waterpump-iot',
+      component: WaterPumpComponent
     }
   ]}
 ];

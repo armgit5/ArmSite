@@ -13,6 +13,7 @@ import { ProjectsRoutingModule } from './projects-routing.module';
 import { IonicComponent } from './ionic/ionic.component';
 import { PcbComponent } from './pcb/pcb.component';
 import { GoogleAppComponent } from './google-app/google-app.component';
+import { WaterPumpComponent } from './waterpump-iot/waterpump-iot.component';
 
 @NgModule({
 
@@ -25,7 +26,8 @@ import { GoogleAppComponent } from './google-app/google-app.component';
     EsgnComponent,
     IonicComponent,
     PcbComponent,
-    GoogleAppComponent
+    GoogleAppComponent,
+    WaterPumpComponent
   ],
   imports: [
     CommonModule,
